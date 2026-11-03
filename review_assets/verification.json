@@ -1,0 +1,167 @@
+{
+  "scope": "Data and model checks plus consistency of saved metrics; no full retraining or prediction recreation.",
+  "dataset": {
+    "train": {
+      "rows": 120000,
+      "class_counts": {
+        "3": 30000,
+        "4": 30000,
+        "2": 30000,
+        "1": 30000
+      },
+      "description_rows_with_backslash": 12522,
+      "remaining_backslash_rows": 0,
+      "max_known_token_length": 212,
+      "all_oov_documents": 0
+    },
+    "test": {
+      "rows": 7600,
+      "class_counts": {
+        "3": 1900,
+        "4": 1900,
+        "2": 1900,
+        "1": 1900
+      },
+      "description_rows_with_backslash": 772,
+      "remaining_backslash_rows": 0,
+      "max_known_token_length": 161,
+      "all_oov_documents": 0
+    }
+  },
+  "coverage": {
+    "types": 88122,
+    "tokens": 5275725,
+    "known_types": 64652,
+    "known_tokens": 5211697
+  },
+  "saved_confusion_matrix": [
+    [
+      1681,
+      62,
+      106,
+      51
+    ],
+    [
+      24,
+      1852,
+      18,
+      6
+    ],
+    [
+      63,
+      18,
+      1639,
+      180
+    ],
+    [
+      65,
+      15,
+      160,
+      1660
+    ]
+  ],
+  "recomputed_saved_metrics": {
+    "World": {
+      "precision": 0.917075831969449,
+      "recall": 0.8847368421052632,
+      "f1-score": 0.9006161264398607,
+      "support": 1900.0
+    },
+    "Sports": {
+      "precision": 0.9512069851052902,
+      "recall": 0.9747368421052631,
+      "f1-score": 0.9628281778008838,
+      "support": 1900.0
+    },
+    "Business": {
+      "precision": 0.8523140925637025,
+      "recall": 0.8626315789473684,
+      "f1-score": 0.8574417996337954,
+      "support": 1900.0
+    },
+    "Sci/Tech": {
+      "precision": 0.875065893516078,
+      "recall": 0.8736842105263158,
+      "f1-score": 0.8743745061890966,
+      "support": 1900.0
+    },
+    "accuracy": 0.8989473684210526,
+    "macro avg": {
+      "precision": 0.8989157007886299,
+      "recall": 0.8989473684210526,
+      "f1-score": 0.8988151525159092,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.8989157007886299,
+      "recall": 0.8989473684210526,
+      "f1-score": 0.8988151525159093,
+      "support": 7600.0
+    }
+  },
+  "sample_articles": [
+    {
+      "row": 348,
+      "gold_index": 1,
+      "title": "Unknown Nesterenko Makes World Headlines (Reuters)",
+      "description": "Reuters - Belarus' Yuliya Nesterenko won the top women's athletics gold medal at the Olympics on Saturday, triumphing over a field stripped of many big names because of doping woes to win the 100 meters."
+    },
+    {
+      "row": 1509,
+      "gold_index": 4,
+      "title": "Oracle case bounces to Europe",
+      "description": "The European Commission is studying the U.S. court decision favoring Oracle's PeopleSoft buyout and deciding whether to pursue its own objections."
+    },
+    {
+      "row": 1938,
+      "gold_index": 4,
+      "title": "British Music Fans Decry ITunes Pricing",
+      "description": "Consumer group complains of higher prices in U.K. than elsewhere in Europe."
+    },
+    {
+      "row": 2574,
+      "gold_index": 3,
+      "title": "Adobe updates RAW plug-in with digital negative format",
+      "description": "Adobe has updated Photoshop #39;s support for digital cameras #39; RAW image formats. The new plug-in adds to the number of camera models supported and includes a utility for converting images into the DNG, digital negative format."
+    },
+    {
+      "row": 2883,
+      "gold_index": 1,
+      "title": "Witnesses to Confront Cali Cartel Kingpin",
+      "description": "Thirteen years into their probe, U.S. investigators have assembled a team of smugglers, accountants and associates to testify against Colombian cartel kingpin Gilberto Rodriguez Orejuela."
+    },
+    {
+      "row": 3315,
+      "gold_index": 1,
+      "title": "Analysis: Iran #39;s missile capabilities",
+      "description": "Iran has announced it has improved its missile capabilities by developing a medium-range ballistic missile, with abilities to work on longer range systems -- a steady progress that "
+    },
+    {
+      "row": 3354,
+      "gold_index": 3,
+      "title": "Nintendo to Unveil Handheld Upgrade",
+      "description": "Facing its biggest threat ever from the arrival of Sony Corp. in the portable video-game machine market, Japanese game-maker Nintendo Co."
+    },
+    {
+      "row": 6203,
+      "gold_index": 3,
+      "title": "Anil Ambani authorises mother to take decisions on his behalf",
+      "description": "MUMBAI/NEW DELHI: The stage is set for a family meeting of the Ambanis here on Monday on the ownership issue in the Rs 80,000 crore-Reliance group of industries as Mukesh Ambani returned from the US even as his brother Anil is understood to have "
+    },
+    {
+      "row": 6278,
+      "gold_index": 4,
+      "title": "Update: PeopleSoft board won't negotiate Oracle takeover",
+      "description": "PeopleSoft executives said over the weekend that they won't discuss a sale to Oracle at a price of  $24 per share but would consider an offer at a higher price."
+    },
+    {
+      "row": 7505,
+      "gold_index": 1,
+      "title": "Boys 'cured' with gene therapy ",
+      "description": "Gene therapy can cure children born with a condition that knocks out their natural defences against infection, mounting evidence shows."
+    }
+  ],
+  "code_compile": "passed",
+  "model_smoke_checks": "passed",
+  "full_training_rerun": false
+}

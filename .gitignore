@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Lab 2 datasets (downloaded by the notebook: AG News + GloVe, ~1 GB)
+data/
+
+# Word lock files and staged report output
+~$*.docx
+review_assets/*.pending
